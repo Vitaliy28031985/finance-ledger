@@ -4,43 +4,68 @@ padding-bottom: 20px;
 color: $minor-text;
 }
 
-.team-page-text {
+.team-page-text-container {
    margin-bottom: 31px;
    padding-left: 26px;
    padding-right: 27px;
    text-align: center;
 }
 
-.team-page-text p {
+.team-page-text-top  {
 font-size: 16px;
 font-weight: 400;
 line-height: 1.4;
 letter-spacing: 0em;
+@media screen and (min-width: 768px) {
+  font-size: 20px; 
 }
-
-.team-page-text h2 {
+}
+.team-page-text-bottom  {
+font-size: 16px;
+font-weight: 400;
+line-height: 1.4;
+letter-spacing: 0em;
+@media screen and (min-width: 768px) {
+  font-size: 18px; 
+}
+}
+.team-page-text-container h2 {
 margin-top: 16px;
 margin-bottom: 24px;
 font-size: 32px;
 font-weight: 400;
 line-height: 1.4;
 letter-spacing: 0em;
+@media screen and (min-width: 768px) {
+  font-size: 40px; 
+}
 }
 
 .team-page-card {
  padding-left: 20px;
  padding-right: 20px;
  text-align: center;
+ @media screen and (min-width: 768px) {
+   display: flex;
+   gap: 18px;
+   margin-bottom: 40px;
+ }
 }
 
 .team-page-card li {
    margin-bottom: 30px;
+@media screen and (min-width: 768px) {
+  margin-bottom: 0;
+    }
 }
 .team-page-card li {
    position: relative;
 }
 .team-page-card-img {
    width: 280px;
+   @media screen and (min-width: 768px) {
+     width: 223px; 
+   }
 }
 
 .team-page-card-name {
@@ -49,7 +74,10 @@ margin-bottom: 8px;
 font-size: 20px;
 font-weight: 400;
 line-height: 1.3;
-letter-spacing: 0em;  
+letter-spacing: 0em;
+@media screen and (min-width: 768px) {
+  font-size: 32px; 
+}  
 }
 
 .team-page-card-position {
@@ -57,6 +85,9 @@ font-size: 16px;
 font-weight: 400;
 line-height: 1.4;
 letter-spacing: 0em;
+@media screen and (min-width: 768px) {
+  font-size: 18px; 
+}
 }
 
 .team-social-container {
@@ -65,7 +96,11 @@ letter-spacing: 0em;
   width: 280px;
   height: 187px;
   background-color: rgba(4, 4, 4, 1);
-  opacity: 0; 
+  opacity: 0;
+  @media screen and (min-width: 768px) {
+     width: 223px;
+     height: 148px; 
+   } 
   &:hover, &:focus {
    opacity: 0.5; 
   }

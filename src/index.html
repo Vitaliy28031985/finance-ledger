@@ -100,8 +100,7 @@
     <picture>
       <source media="(min-width: 768px)" srcset="./img/blog/blog-tablet-1x.jpg, ./img/blog/blog-tablet-2x.jpg">
      <img src="./img/blog/blog.jpg" alt="blog"> 
-    </picture>
-    
+    </picture> 
   </div>
   <div class="blog-page-text">
     <p>April 16 2020</p>
@@ -116,10 +115,10 @@
 <!-- team -->
 
 <section class="team-page container">
-<div class="team-page-text">
-<p>Who we are</p>
+<div class="team-page-text-container">
+<p class="team-page-text-top">Who we are</p>
 <h2>Our Professional Team</h2>
-<p>
+<p class="team-page-text-bottom">
   Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sapiente!
 </p>
 </div>
@@ -257,14 +256,19 @@
 
 <section class="contact-page container">
   <div class="contact-page-img-container">
+   <picture>
+<source media="(min-width: 768px)" srcset="./img/form/contact-tablet1x.jpg, ./img/form/contact-tablet2x.jpg">
 <img src="./img/form/contact.jpg" alt="contact">
+   </picture> 
   </div>
+  <div>
 <h2 class="contact-page-title">Request Callback</h2>
 <form action="" class="contact-page-form">
   <input placeholder="Enter your name" class="contact-page-input" type="text" name="name">
   <input placeholder="Enter email*" type="email" name="email">
   <button type="submit">Send</button>
 </form>
+</div>
 </section>
 
 <!-- footer -->
