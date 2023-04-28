@@ -36,7 +36,9 @@ letter-spacing: 0em;
 .team-page-card li {
    margin-bottom: 30px;
 }
-
+.team-page-card li {
+   position: relative;
+}
 .team-page-card-img {
    width: 280px;
 }
@@ -55,4 +57,21 @@ font-size: 16px;
 font-weight: 400;
 line-height: 1.4;
 letter-spacing: 0em;
+}
+
+.team-social-container {
+  position: absolute;
+  top: 0;
+  width: 280px;
+  height: 187px;
+  background-color: rgba(4, 4, 4, 1);
+  opacity: 0; 
+  &:hover, &:focus {
+   opacity: 0.5; 
+  }
+}
+.team-social-list {
+   position: absolute;
+   top: 75px;
+   left: 35px;
 }
