@@ -1,0 +1,48 @@
+.footer-page {
+   padding-top: 20px;
+   padding-bottom: 25px;
+   color: $min-text-color;
+   background-color: $minor-text;
+}
+
+.footer-page p {
+font-size: 16px;
+font-weight: 400;
+line-height: 1.4;
+letter-spacing: 0em;
+text-align: center;
+
+}
+
+.footer-page-social {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 25px;
+margin-bottom: 12px;
+}
+
+.social-facebook-twitter {
+   width: 35px;
+   height: 35px;
+   fill: $min-text-color;
+ &:hover, &:focus {
+      fill: $section-looking-for-bag;
+   }  
+}
+.social-facebook-youtube {
+   width: 40px;
+   height: 35px;
+   fill: $min-text-color;
+    &:hover, &:focus {
+      fill: $section-looking-for-bag;
+   } 
+}
+.social-facebook-linkedin {
+  width: 31px;
+  height: 35px;
+  fill: $min-text-color;
+   &:hover, &:focus {
+      fill: $section-looking-for-bag;
+   }  
+}
