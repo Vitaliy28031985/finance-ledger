@@ -1,0 +1,49 @@
+.section-page {
+   height: 533px;
+   background-size: cover;
+   background-position: center;
+   background-image: 
+   linear-gradient((rgba(0, 0, 0, 0.5)), rgba(0, 0, 0, 0.5)), 
+   url('../../img/hero/showcase.jpg');
+}
+.p {
+   opacity: 0;
+   margin-bottom: 160px;
+}
+.section-page-container {
+letter-spacing: 0em;
+   
+}
+
+.section-page-container h2 {
+width: 241px;
+margin-left: 70px;
+font-size: 40px;
+font-weight: 600;
+line-height: 1.4;
+
+
+}
+
+.section-page-container p {
+margin-top: 16px;
+margin-bottom: 24px;
+font-size: 26px;
+font-weight: 400;
+line-height: 1.2;
+text-align: center;
+}
+
+.section-page-container button {
+display: block;
+margin-left: auto;
+margin-right: auto;
+border-radius: 5px;
+padding: 16px 32px 16px 32px;
+color: $min-text-color;
+background-color: $section-looking-for-bag;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+&:hover, &:focus {
+ background-color: $button-grin-hover-background-color;  
+}
+}

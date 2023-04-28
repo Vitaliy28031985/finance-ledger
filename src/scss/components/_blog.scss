@@ -1,0 +1,44 @@
+.blog-page {
+   padding-bottom: 79px;
+   background-color: $blog-section-background-color;
+}
+
+.blog-page-img-container img {
+   width: 320px;
+}
+
+.blog-page-text {
+margin-top: 48px;
+padding-left: 20px;
+padding-right: 20px;   
+}
+
+.blog-page-text h2 {
+margin-top: 16px;
+margin-bottom: 24px;
+font-size: 32px;
+font-weight: 400;
+line-height: 1.4;
+letter-spacing: 0em;
+}
+
+.blog-page-text p {
+font-size: 16px;
+font-weight: 400;
+line-height: 1.4;
+letter-spacing: 0em;
+}
+
+.blog-page-text button {
+margin-top: 24px;
+padding: 16px 32px 16px 32px;
+border: 1px solid $min-text-color;
+border-radius: 5px;
+color: $min-text-color;
+background-color: $blog-section-background-color;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+&:hover, &:focus {
+background-color: $min-text-color;
+color: $blog-section-background-color;
+}
+}

@@ -1,0 +1,38 @@
+.page-provide {
+   background-color: $section-looking-for-bag;
+}
+.page-provide-text-container {
+padding-top: 79px;
+padding-bottom: 79px;
+padding-left: 20px;
+padding-right: 20px;
+
+}
+.page-provide-text-container p {
+font-size: 16px;
+font-weight: 400;
+line-height: 1.4;
+letter-spacing: 0em;
+}
+
+.page-provide-text-container h2 {
+margin-top: 16px;
+margin-bottom: 24px;
+font-size: 32px;
+font-weight: 400;
+line-height: 1.4;
+letter-spacing: 0em;
+}
+.page-provide-text-container button {
+margin-top: 24px;
+padding: 16px 32px 16px 32px;
+border-radius: 5px;
+border: 1px solid $min-text-color;
+color: $min-text-color;
+background-color: $section-looking-for-bag;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+&:hover, &:focus {
+background-color: $min-text-color;
+color: $button-grin-hover-background-color;
+}
+}

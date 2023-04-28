@@ -1,4 +1,10 @@
 @import '~normalize.css';
-@import 'style/fonts';
-@import 'style/var';
-@import 'style/style';
+@import 'scss/utils/fonts';
+@import 'scss/utils/var';
+@import 'scss/base/common';
+@import 'scss/base/container';
+@import 'scss/components/header';
+@import 'scss/components/hero';
+@import 'scss/components/provide';
+@import 'scss/components/business-cases';
+@import 'scss/components/blog';
