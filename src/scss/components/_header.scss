@@ -1,12 +1,16 @@
 
 .page-header {
 position: fixed;
-padding-top: 22px;
+padding-top: 44px;
+top: 44px;
+left: 50%;
+transform: translate(-50%, -50%);
+z-index: 999;
 @media screen and (min-width: 768px) {
-padding-top: 28px;  
+top: 28px;  
 }
 @media screen and (min-width: 1360px) {
- padding-top: 32px;   
+ top: 32px;   
 }
 }
 
@@ -83,3 +87,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
    text-decoration: underline;
 }
 }
+
+.scroll-header {
+   background-color: rgba(4, 4, 4, 0.8);
+   }
