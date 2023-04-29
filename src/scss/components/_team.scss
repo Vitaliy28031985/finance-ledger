@@ -121,8 +121,12 @@ letter-spacing: 0em;
    position: absolute;
    top: 75px;
    left: 35px;
+   @media screen and (min-width: 768px) {
+   top: 60px;
+   left: 20px;
+   }
    @media screen and (min-width: 1360px) {
-    top: 126px;
+   top: 126px;
    left: 102px;
    }
 }
