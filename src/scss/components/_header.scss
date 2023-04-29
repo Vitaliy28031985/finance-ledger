@@ -40,6 +40,27 @@ color: $min-text-color;
  }
 }
 
+.page-header-logo  {
+   &:hover > .logo-ledger, &:focus > .logo-ledger {
+      color: #2EBF4F;
+      font-size: 30px;
+      @media screen and (min-width: 768px) {
+   font-size: 37px;
+ }
+   }
+   &:hover, &:focus {
+      color: #F4F4F4;
+      font-size: 30px;
+      @media screen and (min-width: 768px) {
+   font-size: 37px;
+ }
+   }
+   &:hover > .page-header-logo-item, &:focus > .page-header-logo-item {
+   width:40px;
+   height: 35px;
+}
+}
+
 .page-header-logo-item {
    width: 35px;
    height: 26px;

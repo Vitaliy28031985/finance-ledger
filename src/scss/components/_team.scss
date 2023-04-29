@@ -103,7 +103,7 @@ letter-spacing: 0em;
   top: 0;
   width: 280px;
   height: 187px;
-  background-color: rgba(4, 4, 4, 0.5);
+  background-color: rgba(4, 4, 4, 0.6);
   opacity: 0;
   @media screen and (min-width: 768px) {
      width: 223px;
@@ -113,9 +113,14 @@ letter-spacing: 0em;
     width: 420px;
     height: 280px;
    }
-  &:hover, &:focus {
+  &:hover, &:focus  {
    opacity: 1; 
   }
+}
+.team-page-card li  {
+   &:hover, &:focus  {
+  width: 60%;
+}
 }
 .team-social-list {
    position: absolute;

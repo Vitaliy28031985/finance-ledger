@@ -40,38 +40,38 @@ margin-bottom: 12px;
    width: 35px;
    height: 35px;
    fill: $min-text-color;
-   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
    @media screen and (min-width: 768px) and (max-width: 1359px) {
    width: 25px;
    height: 25px;
    }
  &:hover, &:focus {
-      fill: $section-looking-for-bag;
+      opacity: 0.8;
    }  
 }
 .social-youtube--team-page {
    width: 40px;
    height: 35px;
    fill: $min-text-color;
-   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
    @media screen and (min-width: 768px) and (max-width: 1359px) {
    width: 30px;
    height: 25px;
    }
     &:hover, &:focus {
-      fill: $section-looking-for-bag;
+      opacity: 0.8;
    } 
 }
 .social-linkedin--team-page {
   width: 31px;
   height: 35px;
   fill: $min-text-color;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
    @media screen and (min-width: 768px) and (max-width: 1359px) {
    width: 21px;
    height: 25px;
    }
    &:hover, &:focus {
-      fill: $section-looking-for-bag;
+      opacity: 0.8;
    }  
 }
