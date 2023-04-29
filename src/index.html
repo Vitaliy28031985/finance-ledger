@@ -271,9 +271,16 @@
   </div>
   <div>
 <h2 class="contact-page-title">Request Callback</h2>
-<form action="" class="contact-page-form">
-  <input placeholder="Enter your name" class="contact-page-input" type="text" name="name">
-  <input placeholder="Enter email*" type="email" name="email">
+<form  class="contact-page-form">
+  <input placeholder="Enter your name" class="contact-page-input" type="text" name="name" id="name">
+  <div class="container-email">
+  <input class="contact-page-input" placeholder="Enter email*" type="email" name="email" id="email">
+  <p class="style-error" id="error">
+     <svg class="error-icon">
+       <use href="./img/symbol-defs.svg#worning">
+     </use></svg>
+    This is a required field</p>
+</div>
   <button type="submit">Send</button>
 </form>
 </div>

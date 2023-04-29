@@ -95,3 +95,22 @@ margin-top: 24px;
  background-color: $button-grin-hover-background-color;  
 }
 }
+
+.email-error {
+   display: none;
+}
+.container-email {
+   position: relative;
+}
+.style-error {
+   position: absolute;
+   top: 50%;
+   transform: translate(0%, -80%);
+   right: 10px;
+   color: red;
+}
+
+.error-icon {
+    width: 18px;
+   height: 18px;
+}
