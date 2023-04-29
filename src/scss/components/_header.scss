@@ -1,7 +1,13 @@
 
 .page-header {
-   position: fixed;
-  padding-top: 22px;
+position: fixed;
+padding-top: 22px;
+@media screen and (min-width: 768px) {
+padding-top: 28px;  
+}
+@media screen and (min-width: 1360px) {
+ padding-top: 32px;   
+}
 }
 
 .page-header-nav {
@@ -12,6 +18,10 @@
       justify-content: space-between;
       padding-right: 32px;
       padding-left: 32px;
+   }
+   @media screen and (min-width: 1360px) {
+     padding-right: 28px;
+      padding-left: 29.5px; 
    }
 }
 .page-header-logo {
@@ -29,6 +39,14 @@ color: $min-text-color;
 .page-header-logo-item {
    width: 35px;
    height: 26px;
+   @media screen and (min-width: 768px) {
+   width: 39px;
+   height: 30px; 
+   }
+   @media screen and (min-width: 1360px) {
+   width: 40px;
+   height: 30.6px;  
+   }
 }
 
 .page-header-logo samp {
@@ -41,8 +59,11 @@ color: $min-text-color;
    margin-top: 16px;
    justify-content: center;
    gap: 12px;
-    @media screen and (min-width: 768px) {
-      gap: 20px;
+   @media screen and (min-width: 768px) {
+   gap: 20px;
+    }
+   @media screen and (min-width: 1360px) {
+   gap: 46px;
     }
 }
 

@@ -10,6 +10,10 @@
    width: 368px;
    height: 610px;
 }
+@media screen and (min-width: 1360px) {
+  width: 670px;
+  height: 460px;
+}
 }
 
 .page-provide-text-container {
@@ -23,7 +27,12 @@ padding-bottom: 62px;
 padding-left: 32px;
 padding-right: 32px;
 }
-
+@media screen and (min-width: 1360px) {
+padding-top: 80px;
+padding-bottom: 80px;
+padding-left: 20px;
+padding-right: 28px;
+}
 }
 .page-provide-text-container p {
 font-size: 16px;

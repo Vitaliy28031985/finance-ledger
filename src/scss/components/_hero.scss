@@ -5,16 +5,22 @@
    background-image: 
    linear-gradient((rgba(0, 0, 0, 0.5)), rgba(0, 0, 0, 0.5)), 
    url('../../img/hero/showcase.jpg');
-     @media screen and (min-width: 768px) {
+   @media screen and (min-width: 768px) {
    height: 1024px;
- }
+   }
+   @media screen and (min-width: 1360px) {
+    height: 768px;
+   }
 }
 .p {
    opacity: 0;
    margin-bottom: 160px;
    @media screen and (min-width: 768px) {
    margin-bottom: 378px;
- }
+   }
+   @media screen and (min-width: 1360px) {
+    margin-bottom: 272px;
+   }
 }
 .section-page-container {
 letter-spacing: 0em;
