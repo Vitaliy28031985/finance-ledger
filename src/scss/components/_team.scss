@@ -119,7 +119,7 @@ letter-spacing: 0em;
 }
 .team-page-card li  {
    &:hover, &:focus  {
-  width: 60%;
+  transform: scale(1.03);
 }
 }
 .team-social-list {
