@@ -5,8 +5,8 @@ const galleryMarking = document.getElementById("gallery-list");
 const galleryList = () => {
    const render = galleryItems
      .map(
-       ({ title, linkX1, linkX2 }) =>
-         `<li>
+       ({id, title, linkX1, linkX2 }) =>
+         `<li class="gallery-item" id=${id}>
           <div>
             <img
             srcset="${linkX1}, ${linkX2}"
