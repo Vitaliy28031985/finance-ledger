@@ -10,7 +10,7 @@ const closeGalleryModal = document.getElementById("close");
 const prevButton = document.getElementById("prev");
 const nextButton = document.getElementById("next");
 
-
+ galleryModal.classList.add("is-hidden");
 
 // function close and open modal
 const openModal = (e) => {
