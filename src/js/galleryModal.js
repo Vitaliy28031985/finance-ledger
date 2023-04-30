@@ -3,6 +3,7 @@ import { helpers } from "./helpers/helpers";
 
 const galleryModal = document.querySelector(".backdrop");
 const casesImg = document.getElementById("cases-img");
+const loader = document.querySelector(".loader");
 
 const galleryItem = document.querySelectorAll(".gallery-item");
 const closeGalleryModal = document.getElementById("close");
@@ -13,15 +14,19 @@ const nextButton = document.getElementById("next");
 
 // function close and open modal
 const openModal = (e) => {
-  
-   galleryModal.classList.remove("is-hidden");
+  loader.classList.remove("is-hidden");
+  galleryModal.classList.remove("is-hidden");
 
-   for (let i = 0; i < galleryItems.length; i += 1) {
-     if (galleryItems[i].id === e.currentTarget.id) {
+  for (let i = 0; i < galleryItems.length; i += 1) {
+    if (galleryItems[i].id === e.currentTarget.id) {
       casesImg.src = galleryItems[i].linkX1;
-      } 
-   }
-}
+    }
+  }
+
+  setTimeout(() => {
+    loader.classList.add("is-hidden");
+  }, 1000); 
+};
 
 const closeModal = () => {
    
@@ -31,13 +36,23 @@ const closeModal = () => {
 //function changes img
 
 const prevItem = () => {
-   helpers.counterDecrement(helpers.count, galleryItems.length - 1); 
-   casesImg.src = galleryItems[helpers.count].linkX1;
+  loader.classList.remove("is-hidden");
+  helpers.counterDecrement(helpers.count, galleryItems.length - 1);
+  casesImg.src = galleryItems[helpers.count].linkX1;
+
+  setTimeout(() => {
+    loader.classList.add("is-hidden");
+  }, 1000); 
 };
 
-const nextItem = () => {   
-helpers.counterIncrement(galleryItems.length - 1);
-casesImg.src = galleryItems[helpers.count].linkX1;
+const nextItem = () => {
+  loader.classList.remove("is-hidden");
+  helpers.counterIncrement(galleryItems.length - 1);
+  casesImg.src = galleryItems[helpers.count].linkX1;
+
+  setTimeout(() => {
+    loader.classList.add("is-hidden");
+  }, 1000); 
 };
 
 // function keyboard
@@ -61,8 +76,6 @@ galleryItem.forEach((item) => {
   item.addEventListener("click", openModal);
 });
 
-
-
 closeGalleryModal.addEventListener("click", closeModal);
 
 prevButton.addEventListener("click", prevItem);
@@ -74,4 +87,4 @@ galleryModal.addEventListener("click", (e) => {
    if (e.target === e.currentTarget) {
      closeModal(); 
    }
-});;
+});
